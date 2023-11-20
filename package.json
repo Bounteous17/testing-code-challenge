@@ -1,0 +1,42 @@
+{
+  "name": "dimaticasoftware-code-challenge",
+  "version": "1.0.0",
+  "description": "The code challenge for Dimatica made by Àlex Serra",
+  "contributors": [
+    "bounteous17@protonmail.com"
+  ],
+  "main": "index.js",
+  "scripts": {
+    "lint": "pnpm exec eslint .",
+    "lint-fix": "pnpm exec eslint --fix .",
+    "format": "pnpm exec prettier --write .",
+    "test": "pnpm exec jest",
+    "test:e2e": "pnpm exec jest"
+  },
+  "engineStrict": true,
+  "engines": {
+    "node": "20"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@jest/types": "^29.6.3",
+    "@types/jest": "^29.5.8",
+    "@types/node": "^20.9.2",
+    "eslint": "^8.54.0",
+    "eslint-config-prettier": "^9.0.0",
+    "eslint-plugin-prettier": "^5.0.1",
+    "jest": "^29.7.0",
+    "nock": "^13.3.8",
+    "prettier": "^3.1.0",
+    "ts-jest": "^29.1.1",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.3.2"
+  },
+  "dependencies": {
+    "axios": "^1.6.2",
+    "http-status": "^1.7.3",
+    "radash": "^11.0.0"
+  }
+}
