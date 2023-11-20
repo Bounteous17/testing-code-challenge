@@ -41,5 +41,17 @@ describe('exercise 1', () => {
       )
       expect(httpMock.isDone()).toBe(true)
     })
+
+    it('response total type is not a number', async () => {
+      const httpMock = nock(urlToMock.origin)
+        .get(urlToMock.pathname)
+        .reply(OK, { total: 'cat' })
+
+      expect(httpMock.isDone()).toBe(false)
+      await expect(computeResult).rejects.toThrow(
+        'Expected value is not a number, we received: cat',
+      )
+      expect(httpMock.isDone()).toBe(true)
+    })
   })
 })
