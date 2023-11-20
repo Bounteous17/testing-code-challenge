@@ -24,3 +24,10 @@ End to end tests are also available:
 ```bash
 pnpm run test:e2e
 ```
+
+## Debug
+
+Running just some tests based on name pattern:
+```bash
+pnpm run test --testNamePattern "should fail"
+```

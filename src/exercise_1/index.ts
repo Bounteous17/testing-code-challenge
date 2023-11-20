@@ -11,8 +11,18 @@ export const url: URL = new URL(
  * to wait the Promise to be resolved on this funcion by using "await".
  * @returns An HTTP request Promise that would be resolved on the caller
  */
-function getCountUsers() {
-  return got.get(url.toString())
+async function getCountUsers() {
+  try {
+    const response = await got.get(url.toString())
+    return response.data
+  } catch (error: any) {
+    const statusError = error?.response?.status
+
+    if (statusError) {
+      throw new Error(`Request failed with status ${statusError}`)
+    }
+    throw new Error('Unknown error perfoming request')
+  }
 }
 
 /**
@@ -21,7 +31,7 @@ function getCountUsers() {
  */
 export async function computeResult() {
   const result = await getCountUsers()
-  const { total } = result.data
+  const { total } = result
 
   if (isNumber(total)) {
     return total + 20
