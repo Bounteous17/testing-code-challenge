@@ -31,3 +31,11 @@ Running just some tests based on name pattern:
 ```bash
 pnpm run test --testNamePattern "should fail"
 ```
+
+## Good to know
+
+- Instad of using `got` library for performing http requests I have been using `axios` since the methods for this POC are the same.
+- All the exercises inside `src/` folder contains mocked unit tests and the file `issue.md` giving an answer for the challenge asked question.
+- You would notice that different solutions has been used for fixing same issues during the errors resolutions of this exercises. Is just a way to show different approaches.
+- Also the unit tests has been made using different approaches for obtaining the same objective. Like using `toEqual` and `toMatchSnapshot`
+- For more complex tests I prefere to use Node `assert` native library.

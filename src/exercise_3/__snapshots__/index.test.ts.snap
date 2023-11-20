@@ -1,0 +1,5 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`get capitalize first word should fail the name is null 1`] = `"Failed to capitalize first word with null"`;
+
+exports[`get capitalize first word should not fail should capitalize first word only 1`] = `"Àlex Serra"`;

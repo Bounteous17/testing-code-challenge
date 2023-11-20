@@ -1,0 +1,1 @@
+- "total" variable is out of the function scope from where it has been defined. This means that variable can not be accessed from another function callback on a different scope too.

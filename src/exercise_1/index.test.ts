@@ -22,6 +22,7 @@ describe('exercise 1', () => {
       const firstValue = await computeResult()
       expect(firstValue).toBe(30)
     })
+
     it('add 2 units to received value 10', async () => {
       mockResponseTotal(2)
       const firstValue = await computeResult()
@@ -30,7 +31,7 @@ describe('exercise 1', () => {
   })
 
   describe('should fail', () => {
-    it('failed response status', async () => {
+    it('failed response status internal server error', async () => {
       const httpMock = nock(urlToMock.origin)
         .get(urlToMock.pathname)
         .reply(INTERNAL_SERVER_ERROR, { total: 1 })
