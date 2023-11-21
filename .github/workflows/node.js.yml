@@ -1,4 +1,4 @@
-name: Node.js TypeScript Build
+name: Build TypeScript Project
 
 on:
   push:
@@ -15,14 +15,17 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@v2
-      
-      - name: Use Node.js
+
+      - name: Setup Node.js
         uses: actions/setup-node@v3
         with:
-          node-version: 20
+          node-version: '20'
+
+      - name: Install pnpm
+        run: npm install -g pnpm
 
       - name: Install dependencies
-        run: npm install
+        run: pnpm install
 
-      - name: Build TypeScript
-        run: npm run build
+      - name: Build
+        run: pnpm run build
