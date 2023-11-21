@@ -3,7 +3,7 @@ import { environment } from '../mongodb-exercises-resources/constants'
 import { searchByRoleAndEmailsMatch } from '.'
 const client = new MongoClient(environment.mongodb.uri)
 
-describe('search exact email name match and recently logged', () => {
+describe('search by role and emails match', () => {
   const constants = {
     emailOne: 'jest@localhost',
     emailTwo: 'mocha@localhost',
