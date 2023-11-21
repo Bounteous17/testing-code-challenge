@@ -61,6 +61,10 @@ Docker context:
 docker-compose build
 ```
 
+There is a Github action avilable at `.github/workflows/node.js.yml`
+
+This is responsible for building the project code. It is not yet able to run the tests due to dependencies on mongo.
+
 ## Visual proof
 
 ![image](https://github.com/Bounteous17/testing-code-challenge/assets/16175933/849703ed-1ad3-4f99-b307-6b5c77daf80c)
