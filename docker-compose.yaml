@@ -16,6 +16,8 @@ services:
       - dimatica-poc
   exercises-tests:
     build: .
+    depends_on:
+      - mongodb
     container_name: dimatica-exercises
     networks:
       - dimatica-poc
