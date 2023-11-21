@@ -61,7 +61,7 @@ describe('search exact email name match and recently logged', () => {
   })
 
   describe('should not fail', () => {
-    it('return only jest latest version user that logged in recently', async () => {
+    it('find users that matches role and emails from the query', async () => {
       const data = await searchByRoleAndEmailsMatch({
         client,
         role: 'c',

@@ -1,6 +1,7 @@
 import type { Config } from '@jest/types'
 
 const config: Config.InitialOptions = {
+  bail: 1,
   // Indicates the root directory where Jest should look for test files
   roots: ['<rootDir>/src'],
 

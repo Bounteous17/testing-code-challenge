@@ -47,3 +47,5 @@ pnpm run test --testNamePattern "should fail"
 - The docker image is based on `linux/amd64`. This is not prepared for running on `ARM` based systemd.
 - In case there was an `.env` file needed I would have used `dotenv` solution for encrypting and shareing the cotent with the team members.
 - For simulating dates form the tests `date-fns` has been used making us thigs easier. Using Jest fake timers is another solution but more complex for this use case.
+
+![image](https://github.com/Bounteous17/dimaticasoftware-code-challenge/assets/16175933/2e00aa76-e6ab-4b59-81ea-9a3d310715a9)
