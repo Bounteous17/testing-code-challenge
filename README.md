@@ -45,8 +45,9 @@ pnpm run test --testNamePattern "should fail"
 - Also the unit tests has been made using different approaches for obtaining the same objective. Like using `toEqual` and `toMatchSnapshot`
 - For more complex tests I prefere to use Node `assert` native library.
 - The docker image is based on `linux/amd64`. This is not prepared for running on `ARM` based systemd.
-- In case there was an `.env` file needed I would have used `dotenv` solution for encrypting and shareing the cotent with the team members.
-- For simulating dates form the tests `date-fns` has been used making us thigs easier. Using Jest fake timers is another solution but more complex for this use case.
+- In case there was an `.env` file needed I would have used `dotenv` solution for encrypting and sharing the content of it with the team members.
+- For simulating dates from the tests `date-fns` has been used making us things easier. Using Jest fake timers is another solution but more complex for this use case.
+- Using a Docker registry for uploading the production image currently being build is something I had not enough time on this occasion.
 
 ## Build
 
