@@ -7,7 +7,7 @@ describe('get capitalize first word', () => {
       const toTestResult = getCapitalizeFirstWord(name)
 
       /**
-       * two approaches
+       * two different approaches
        */
 
       // using snapshots

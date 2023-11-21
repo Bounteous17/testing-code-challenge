@@ -10,6 +10,8 @@
     "lint": "pnpm exec eslint .",
     "lint-fix": "pnpm exec eslint --fix .",
     "format": "pnpm exec prettier --write .",
+    "infra:up": "docker-compose up --detach",
+    "infra:down": "docker-compose down",
     "test": "pnpm exec jest",
     "test:watch": "pnpm run test --watchAll",
     "test:e2e": "pnpm exec jest"
