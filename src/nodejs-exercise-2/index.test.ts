@@ -4,7 +4,7 @@ import nock from 'nock'
 import axios from 'axios'
 axios.defaults.adapter = 'http'
 
-describe('exercise 1', () => {
+describe('exercise 2', () => {
   afterEach(() => nock.cleanAll())
 
   beforeEach(() => expect(nock.isDone()).toBe(true))
