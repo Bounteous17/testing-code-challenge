@@ -7,6 +7,7 @@
   ],
   "main": "index.js",
   "scripts": {
+    "build": "pnpm exec tsc",
     "lint": "pnpm exec eslint .",
     "lint-fix": "pnpm exec eslint --fix .",
     "format": "pnpm exec prettier --write .",

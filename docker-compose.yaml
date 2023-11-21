@@ -12,7 +12,17 @@ services:
       MONGO_INITDB_ROOT_PASSWORD: toor
     volumes:
       - mongodb_data:/data/db
+    networks:
+      - dimatica-poc
+  exercises-tests:
+    build: .
+    container_name: dimatica-exercises
+    networks:
+      - dimatica-poc
 
 volumes:
   mongodb_data:
     name: mongodb_data
+
+networks:
+  dimatica-poc:
