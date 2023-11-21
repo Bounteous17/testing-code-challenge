@@ -18,7 +18,7 @@ Start all the containers for external services:
 pnpm run infra:up
 ```
 
-Test that everything is working as expected by running unit tests:
+Test that everything is working as expected by running unit tests `(Current coverage is about 98%)`:
 
 ```bash
 pnpm run test
@@ -46,3 +46,4 @@ pnpm run test --testNamePattern "should fail"
 - For more complex tests I prefere to use Node `assert` native library.
 - The docker image is based on `linux/amd64`. This is not prepared for running on `ARM` based systemd.
 - In case there was an `.env` file needed I would have used `dotenv` solution for encrypting and shareing the cotent with the team members.
+- For simulating dates form the tests `date-fns` has been used making us thigs easier. Using Jest fake timers is another solution but more complex for this use case.
