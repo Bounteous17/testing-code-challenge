@@ -48,4 +48,5 @@ pnpm run test --testNamePattern "should fail"
 - In case there was an `.env` file needed I would have used `dotenv` solution for encrypting and shareing the cotent with the team members.
 - For simulating dates form the tests `date-fns` has been used making us thigs easier. Using Jest fake timers is another solution but more complex for this use case.
 
-![image](https://github.com/Bounteous17/testing-code-challenge/assets/16175933/2e00aa76-e6ab-4b59-81ea-9a3d310715a9)
+![image](https://github.com/Bounteous17/testing-code-challenge/assets/16175933/849703ed-1ad3-4f99-b307-6b5c77daf80c)
+
