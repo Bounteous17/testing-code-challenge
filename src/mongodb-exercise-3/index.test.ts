@@ -3,7 +3,7 @@ import { environment } from '../mongodb-exercises-resources/constants'
 import { updateByField } from '.'
 const client = new MongoClient(environment.mongodb.uri)
 
-describe('search exact email name match and recently logged', () => {
+describe('update field based on object id', () => {
   const constants = {
     objectId: new ObjectId('5cd96d3ed5d3e20029627d4a'),
     emailOne: 'jest@localhost',
